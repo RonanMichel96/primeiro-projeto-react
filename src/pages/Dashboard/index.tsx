@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
                     />
                     <div>
                         <strong>RonanMichel96/primeiro-projeto-react</strong>
-                        <p>Meu primeiro projeto de React</p>
+                        <p>Uma página símples em React para pesquisar repositórios no Github</p>
                     </div>
 
                     <FiChevronRight size={20} />
@@ -36,7 +36,7 @@ const Dashboard: React.FC = () => {
                     />
                     <div>
                         <strong>RonanMichel96/primeiro-projeto-react</strong>
-                        <p>Meu primeiro projeto de React</p>
+                        <p>Uma página símples em React para pesquisar repositórios no Github</p>
                     </div>
 
                     <FiChevronRight size={20} />
@@ -48,7 +48,7 @@ const Dashboard: React.FC = () => {
                     />
                     <div>
                         <strong>RonanMichel96/primeiro-projeto-react</strong>
-                        <p>Meu primeiro projeto de React</p>
+                        <p>Uma página símples em React para pesquisar repositórios no Github</p>
                     </div>
 
                     <FiChevronRight size={20} />
