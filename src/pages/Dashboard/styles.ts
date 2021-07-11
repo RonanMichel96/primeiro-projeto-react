@@ -63,8 +63,7 @@ export const Error = styled.span`
 export const Repositories = styled.div`
     margin-top: 80px;
     max-width: 700px;
-    //Só vai aplicar do segundo elemento pra frente
-
+    
     a{
         background: #fff;
         border-radius: 5px;
