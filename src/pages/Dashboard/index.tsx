@@ -36,20 +36,23 @@ const Dashboard: React.FC = () => {
      */
     async function handleAddRepository(event: FormEvent<HTMLFormElement>): Promise<void> {
 
-        /**
-         * Para não ter reload da página.
-         */
+        //Para não ter reload da página.
         event.preventDefault();
 
         if(!newRepo){
             setInputError('Digite o autor/nome do repositório');
             return;
         }
+        const repositoryIndex= repositories.findIndex( value => value.full_name === newRepo);
+        if(repositoryIndex > -1){
+             setInputError('Repositório já foi consultado');
+             return;
+        }
 
         try{
             const response= await api.get<Repository>(`repos/${newRepo}`);
             const repository = response.data;
-    
+
             setRepositories([...repositories, repository]);
             setNewRepo('');
             setInputError('');
